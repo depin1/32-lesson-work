@@ -309,19 +309,56 @@
 // }
 
 
-const numbers = +prompt("Raqam kiriting")
-const num = []
-const addnum = []
-const oddnum = []
 
 
-for (let index = 0; index < numbers; index++) {
-    if (index % 2 == 0) {
-        addnum.push(index)
-    } else {
-        oddnum.push(index)
-    }
 
-}
-console.log(addnum);
-console.log(oddnum);
+
+
+
+
+// const input = document.querySelector(".input");
+// const btn = document.querySelector(".btn");
+// const box = document.querySelector(".box");
+
+// btn.addEventListener("click", function() {
+//     const reon = input.value.split("").reverse().join("");
+
+//     box.textContent = reon
+// })
+
+
+
+
+
+
+
+// const numbers = +prompt("Raqam kiriting")
+// const num = []
+// const addnum = []
+// const oddnum = []
+
+
+// for (let index = 0; index < numbers; index++) {
+//     if (index % 2 == 0) {
+//         addnum.push(index)
+//     } else {
+//         oddnum.push(index)
+//     }
+
+// }
+// console.log(addnum);
+// console.log(oddnum);
+
+
+
+
+
+
+
+
+// const num2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const total = 0;
+// for (let index = 0; index < num2.length; index++) {
+//     total2 = total + num2
+//     console.log(total2[index]);
+// }
