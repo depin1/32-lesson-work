@@ -384,17 +384,28 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
 
     const resolt = document.createElement("div");
-    // resolt.classList.add("box_chilled")
+
+    resolt.classList.add("box_menu");
     let span = document.createElement("span");
     const img = document.createElement('img');
+    img.classList.add("image_delite")
     img.src = 'https://avatars.mds.yandex.net/i?id=7f406633d232c7e5aed8dff7f91b6243c66c1ac6-7755287-images-thumbs&n=13'
     span.textContent = input.value
     img.textContent = input.value
 
+    const btn = document.createElement('button');
+    btn.classList.add("botton")
     resolt.appendChild(span)
-    resolt.appendChild(img)
-    box.appendChild(resolt)
+    btn.appendChild(img);
 
+
+    resolt.appendChild(btn);
+
+    box.appendChild(resolt);
+
+    btn.addEventListener("click", () => {
+        box.removeChild(resolt)
+    })
 })
 
 
