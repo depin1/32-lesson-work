@@ -362,3 +362,50 @@
 //     total2 = total + num2
 //     console.log(total2[index]);
 // }
+
+
+
+
+
+// const numbers = [10, 54, 55, 83, 12, 4, 9, 70, 5, 39];
+// let minnum = [];
+// let maxnum = [];
+// for (let i = 0; i < numbers.length; i++) {
+//     minnum = Math.max(...numbers);
+//     maxnum = Math.min(...numbers);
+// }
+// console.log(minnum, maxnum);
+
+
+
+
+
+
+
+// const input = document.querySelectorAll(".input");
+// const btn = document.querySelector(".btn");
+// const box = document.querySelectorAll(".box");
+
+
+// btn.addEventListener("click", function(e) {
+//     e.preventDefault
+//     box[0].textContent += input[0].value
+//     box[1].textContent += input[1].value
+//     box[2].textContent += input[2].value
+//     input[0].value = ""
+// })
+
+
+
+
+
+
+
+
+
+const n = 6;
+let resolt = 1;
+for (let i = 1; i < n; i++) {
+
+    console.log(resolt *= i);
+}
