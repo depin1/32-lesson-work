@@ -377,35 +377,94 @@
 // console.log(minnum, maxnum);
 
 
+const form = document.querySelector(".form");
+const input = document.querySelector(".input");
+const box = document.querySelector(".box");
+form.addEventListener("submit", (e) => {
+    e.preventDefault()
+
+    const resolt = document.createElement("div");
+    // resolt.classList.add("box_chilled")
+    let span = document.createElement("span");
+    const img = document.createElement('img');
+    img.src = 'https://avatars.mds.yandex.net/i?id=7f406633d232c7e5aed8dff7f91b6243c66c1ac6-7755287-images-thumbs&n=13'
+    span.textContent = input.value
+    img.textContent = input.value
+
+    resolt.appendChild(span)
+    resolt.appendChild(img)
+    box.appendChild(resolt)
+
+})
 
 
 
 
 
-// const input = document.querySelectorAll(".input");
-// const btn = document.querySelector(".btn");
-// const box = document.querySelectorAll(".box");
 
 
-// btn.addEventListener("click", function(e) {
-//     e.preventDefault
-//     box[0].textContent += input[0].value
-//     box[1].textContent += input[1].value
-//     box[2].textContent += input[2].value
-//     input[0].value = ""
+// const form = document.querySelector('.form'),
+//     name = document.querySelector('.name'),
+//     relation = document.querySelector('.relation'),
+//     number = document.querySelector('.number'),
+//     btn4 = document.querySelector('.btn'),
+//     result = document.querySelectorAll('.resuld');
+
+// form.addEventListener('submit', (e) => {
+//     e.preventDefault();
+
+
+//     const result = document.querySelector('.resuld');
+//     result.classList.add('contact');
+
+//     let nameSpan = document.createElement('span')
+//     nameSpan.textContent = name.value;
+//     result.appendChild(nameSpan);
+
+//     let relatSpan = document.createElement('span')
+//     relatSpan.textContent = relation.value;
+//     result.appendChild(relatSpan);
+
+//     let numberSpan = document.createElement('span')
+//     numberSpan.textContent = number.value;
+//     result.appendChild(numberSpan);
+
+//     let removeBtn = document.createElement('button')
+//     removeBtn.textContent = 'delete';
+//     result.appendChild(removeBtn);
+
+//     removeBtn.addEventListener('click', () => {
+//         result.removeChild(nameSpan)
+//     })
+//     removeBtn.addEventListener('click', () => {
+//         result.removeChild(relatSpan)
+//     })
+//     removeBtn.addEventListener('click', () => {
+//         result.removeChild(numberSpan)
+//     })
+//     removeBtn.addEventListener('click', () => {
+//         result.removeChild(removeBtn)
+//     })
+
+//     form.reset();
+// })
+
+// btn.addEventListener("click", () => {
+
+
 // })
 
 
 
 
 
+// const n = 6;
+// let resolt = 1;
+// for (let i = 1; i < n; i++) {
+
+//     let rest = resolt += i
+//         // for (let t = 0; rest < rest; t++) {
 
 
-
-
-const n = 6;
-let resolt = 1;
-for (let i = 1; i < n; i++) {
-
-    console.log(resolt *= i);
-}
+//     // }
+// }
